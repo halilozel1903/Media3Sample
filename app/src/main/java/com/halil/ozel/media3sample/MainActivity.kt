@@ -18,10 +18,6 @@ import com.halil.ozel.media3sample.databinding.ActivityMainBinding
 
 @UnstableApi
 class MainActivity : AppCompatActivity() {
-    private val mediaUrl =
-        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-    private val mediaUrlHls =
-        "http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8"
 
     private val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
@@ -58,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             .build()
             .apply {
 
-                val source = if (mediaUrl.contains("m3u8"))
+                val source = if (MEDIA_URL.contains("m3u8"))
                     getHlsMediaSource()
                 else
                     getProgressiveMediaSource()
@@ -72,13 +68,13 @@ class MainActivity : AppCompatActivity() {
     private fun getHlsMediaSource(): MediaSource {
         // Create a HLS media source pointing to a playlist uri.
         return HlsMediaSource.Factory(dataSourceFactory)
-            .createMediaSource(MediaItem.fromUri(mediaUrl))
+            .createMediaSource(MediaItem.fromUri(MEDIA_URL))
     }
 
     private fun getProgressiveMediaSource(): MediaSource {
         // Create a Regular media source pointing to a playlist uri.
         return ProgressiveMediaSource.Factory(dataSourceFactory)
-            .createMediaSource(MediaItem.fromUri(Uri.parse(mediaUrl)))
+            .createMediaSource(MediaItem.fromUri(Uri.parse(MEDIA_URL)))
     }
 
     private fun releasePlayer() {
@@ -121,5 +117,12 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    companion object {
+        private const val MEDIA_URL =
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        private const val mediaUrlHls =
+            "http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8"
     }
 }
