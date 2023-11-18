@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     private fun getHlsMediaSource(): MediaSource {
         // Create a HLS media source pointing to a playlist uri.
         return HlsMediaSource.Factory(dataSourceFactory)
-            .createMediaSource(MediaItem.fromUri(MEDIA_URL))
+            .createMediaSource(MediaItem.fromUri(MEDIA_URL_HLS))
     }
 
     private fun getProgressiveMediaSource(): MediaSource {
@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private const val MEDIA_URL =
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-        private const val mediaUrlHls =
+        private const val MEDIA_URL_HLS =
             "http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8"
     }
 }
