@@ -1,4 +1,4 @@
-# Media3 Android Sample
+# Media3 Android Sample 🎥 📸 📺
 
 ![Screenshot](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4xS6qkXGiJs4EAhcrM38RaEvqOC2n7qTnv-tBylczHyOXOtUBMKdZoe3eI2HAD61mvUak1yP1QsU7aZaoXwoTjvZhZixQ7qvnEu2MCMYjoI84uMOO8VsUpNCb2v8YJ4FRIGaxTqGdAp4WrDTB6DbINkiRPi4LKLD0-tSSsAtkKkYCCd5ob_LDj6xf/s1600/header-Android%20-%20Media3%20is%20ready%20to%20play.png)
 
