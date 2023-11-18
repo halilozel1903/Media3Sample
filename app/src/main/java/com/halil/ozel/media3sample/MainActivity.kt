@@ -1,4 +1,3 @@
-
 package com.halil.ozel.media3sample
 
 import android.net.Uri
@@ -114,11 +113,11 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 Player.STATE_BUFFERING -> {
-                   // Do nothing
+                    // Do nothing
                 }
 
                 Player.STATE_IDLE -> {
-                   // Do nothing
+                    // Do nothing
                 }
             }
         }
