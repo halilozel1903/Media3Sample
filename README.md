@@ -45,6 +45,9 @@ The `MEDIA_URL` and `MEDIA_URL_HLS` constants define the URLs of the videos to p
 
 The provided code demonstrates how to use ExoPlayer to play videos in an Android app. It covers the creation of the player, handling of media sources, playback controls, and event management
 
+## Screenshots 🖼
+<img src="https://github.com/halilozel1903/Media3Sample/blob/master/screen-one.png" width="250"/> || <img src="https://github.com/halilozel1903/Media3Sample/blob/master/screen-two.png" width="250"/> || <img src="https://github.com/halilozel1903/Media3Sample/blob/master/screen-three.png" width="250"/>
+
 ## Donation 
 
 You can support by buying a coffee. ☕️
